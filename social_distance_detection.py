@@ -61,7 +61,9 @@ while cap.isOpened():
     network.setInput(blob)
     detections = network.forward()
 
+    # x,y,z in cm
     pos_dict = dict()
+    # x,y offset coordinates 
     coordinates = dict()
 
     # Focal length
